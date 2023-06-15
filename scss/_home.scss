@@ -1,0 +1,53 @@
+.s-hero {
+  margin-top: 6.2rem;
+  .upper-area {
+    background-color: $bg-2;
+    height: 7.2rem;
+    @include flex(row, center, center);
+    .container {
+      .menu {
+        @include flex(row, center, space-between);
+        nav {
+          ul {
+            @include flex(row, center, center);
+            li {
+              &:not(:last-child) {
+                margin-right: 3.3rem;
+              }
+              button {
+                margin-right: 4.1rem;
+                font-size: 1.4rem;
+                @include flex(row, center, center);
+                color: $white;
+                text-transform: uppercase;
+                img {
+                  margin-left: 0.9rem;
+                  width: 1rem;
+                }
+              }
+              a {
+                color: $white;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        form {
+          @include flex(row, center, center);
+          input {
+            height: 4rem;
+            max-width: 23.8rem;
+            width: 100%;
+            padding: 0.8rem 1.5rem;
+          }
+          button {
+            img {
+              width: 2.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

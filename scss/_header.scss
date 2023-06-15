@@ -1,0 +1,60 @@
+header {
+  width: 100%;
+  height: 6.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include flex(row, center, center);
+  .container {
+    @include flex(row, center, space-between);
+    .nav {
+      @include flex(row, center, center);
+      nav {
+        margin-left: 5.9rem;
+        ul {
+          @include flex(row, center, center);
+          li {
+            &:not(:last-child) {
+              margin-right: 2.5rem;
+            }
+            a {
+              text-decoration: none;
+              font-size: 14px;
+              color: $text-2;
+              transition: all 0.3s;
+              &:hover {
+                color: $text-5;
+              }
+            }
+          }
+        }
+      }
+    }
+    .login {
+      @include flex(row, center, center);
+      .dia {
+        margin-right: 30px;
+        @include flex(row, center, center);
+        a {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: $black;
+          letter-spacing: 0.18px;
+          font-weight: bold;
+        }
+        img {
+          width: 25px;
+          margin-left: 6px;
+        }
+      }
+      .icons {
+        @include flex(row, center, flex-end);
+        img {
+          &:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
