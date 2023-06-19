@@ -55,6 +55,9 @@
                 src="/assets//img/shopping_cart.svg"
                 alt="Ícone de carrinho de compras"
             /></a>
+            <button id="js-open-menu-mobile">
+              <img src="/assets/img/hamburguer.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -106,6 +109,42 @@
       </div>
     </div>
 
+    <div class="menu-mobile" id="js-menu-mobile">
+      <aside>
+        <div class="icons">
+          <a href="/">nerdweb</a>
+          <button id="js-closeMenuMobile">X</button>
+        </div>
+        <div class="nav-header">
+          <ul>
+            <li><a href="">NerdWeb</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Atendimento</a></li>
+          </ul>
+        </div>
+        <div class="nav-site">
+          <ul>
+            <li>
+              <button id="js-btn-modal-mobile">Sites</button>
+              <div class="modal-mobile active" id="js-modal-mobile">
+                <ul>
+                  <li><a href="#">Soluções site</a></li>
+                  <li><a href="#">Soluções por E-commerce</a></li>
+                  <li><a href="#">Soluções por Redes Sociais</a></li>
+                  <li><a href="#">Soluções por Landing Pages</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Redes sociais</a></li>
+            <li><a href="#">E-commerce</a></li>
+            <li><a href="#">Mídia online</a></li>
+            <li><a href="#">Landing pages</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
     <section class="s-hero">
       <div class="upper-area">
         <div class="container">
@@ -138,7 +177,7 @@
           </div>
         </div>
       </div>
-      <img src="/assets/img/banner.jpg" alt="" />
+      <div class="bg-hero"></div>
     </section>
 
     <section class="s-products">
@@ -304,44 +343,97 @@
           <h2>Seleção de Serviços</h2>
           <span> Conheça nossa seleção especial </span>
         </div>
-        <div class="cards">
-          <div class="card">
-            <div class="img">
-              <img src="/assets/img/Imagem card serviço.jpg" alt="" />
+        <div class="slide-cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
-            <div class="card-text">
-              <h4>Serviço de teste de front-end</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              </p>
-              <a href="#">Conhecer</a>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço 2.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="/assets/img/Imagem card serviço 2.jpg" alt="" />
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço 3.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
-            <div class="card-text">
-              <h4>Serviço de teste de front-end</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              </p>
-              <a href="#">Conhecer</a>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="/assets/img/Imagem card serviço 3.jpg" alt="" />
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço 2.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
-            <div class="card-text">
-              <h4>Serviço de teste de front-end</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              </p>
-              <a href="#">Conhecer</a>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="img">
+                  <img src="/assets/img/Imagem card serviço 3.jpg" alt="" />
+                </div>
+                <div class="card-text">
+                  <h4>Serviço de teste de front-end</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  </p>
+                  <a href="#">Conhecer</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

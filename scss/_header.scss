@@ -68,14 +68,42 @@ header {
         }
       }
       .icons {
-        @include flex(row, center, flex-end);
+        @include flex(row, center, space-between);
         a {
           transition: transform 0.3s;
           &:hover {
             transform: scale(1.08);
           }
-          &:not(:last-child) {
+          &:first-child {
             margin-right: 3rem;
+          }
+        }
+        button {
+          display: none;
+          img {
+            width: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    .container {
+      nav {
+        display: none;
+      }
+      .login {
+        .dia {
+          display: none;
+        }
+        .icons {
+          button {
+            margin-left: 3rem;
+            display: block;
+            img {
+              width: 3rem;
+            }
           }
         }
       }

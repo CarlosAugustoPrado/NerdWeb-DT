@@ -31,6 +31,10 @@ footer {
               a {
                 color: $text-6;
                 font-size: 1.4rem;
+                transition: color 0.3s;
+                &:hover {
+                  color: $text-7;
+                }
               }
             }
           }
@@ -38,7 +42,7 @@ footer {
         .business-hours {
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
+
           h4 {
             color: $text-8;
             font-size: 1.8rem;
@@ -85,6 +89,65 @@ footer {
               max-width: 2.9rem;
               width: 100%;
             }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(800px) {
+    .container {
+      .upper-area {
+        flex-direction: column;
+        margin-bottom: 7.3rem;
+        h3 {
+          margin-bottom: 4rem;
+        }
+        .links {
+          width: 100%;
+          justify-content: space-between;
+          .group {
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(600px) {
+    .container {
+      .upper-area {
+        .links {
+          display: flex;
+          flex-direction: column;
+
+          .group {
+            margin-right: 0;
+            margin-bottom: 3rem;
+            h4 {
+              margin-right: 0;
+              margin-bottom: 1rem;
+            }
+          }
+          .business-hours {
+            h4 {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(400px) {
+    .container {
+      .lower-area {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .social {
+          margin: 3rem auto 0 auto;
+          padding-right: 0;
+          text-align: center;
+          .icons {
+            justify-content: center;
           }
         }
       }
