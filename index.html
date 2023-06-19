@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -35,32 +39,81 @@
           </nav>
         </div>
         <div class="login">
-          <div class="dia">
-            <a>Dia a dia</a>
+          <div class="dia" id="js-dia">
+            <span>Dia a dia</span>
             <img
               src="/assets/img/arrow-down.svg"
               alt="ícone de seta para baixo"
             />
           </div>
           <div class="icons">
-            <img src="/assets/img/account_circle.svg" alt="ícone de login" />
-            <img
-              src="/assets//img/shopping_cart.svg"
-              alt="Ícone de carrinho de compras"
-            />
+            <a href=""
+              ><img src="/assets/img/account_circle.svg" alt="ícone de login"
+            /></a>
+            <a href=""
+              ><img
+                src="/assets//img/shopping_cart.svg"
+                alt="Ícone de carrinho de compras"
+            /></a>
           </div>
         </div>
       </div>
     </header>
 
-    <div class="s-hero">
+    <div class="modal-menu" id="js-modal-menu">
+      <div class="list-menu-modal-diff">
+        <h3>Soluções Site</h3>
+        <ul>
+          <li>
+            <a href="">Briefing</a>
+          </li>
+          <li>
+            <a href="">Pesquisa</a>
+          </li>
+          <li>
+            <a href="">Criação</a>
+          </li>
+          <li>
+            <a href="">Veiculação</a>
+          </li>
+        </ul>
+      </div>
+      <div class="list-menu-modal">
+        <h3>Soluções por E-commerce</h3>
+        <ul>
+          <li><a href="">Lorem</a></li>
+          <li><a href="">Ipsum</a></li>
+          <li><a href="">Dolor</a></li>
+          <li><a href="">Google ads</a></li>
+          <li><a href="">Análise de mercado</a></li>
+        </ul>
+      </div>
+      <div class="list-menu-modal">
+        <h3>Soluções por Redes Sociais</h3>
+        <ul>
+          <li><a href="">Briefing</a></li>
+          <li><a href="">Pesquisa</a></li>
+          <li><a href="">Criação</a></li>
+          <li><a href="">Veiculação</a></li>
+        </ul>
+      </div>
+      <div class="list-menu-modal">
+        <h3>Soluções por Landing Page</h3>
+        <ul>
+          <li><a href="">Conteúdo</a></li>
+          <li><a href="">Relatórios</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="s-hero">
       <div class="upper-area">
         <div class="container">
           <div class="menu">
             <nav>
               <ul>
                 <li>
-                  <button id="btn-sites">
+                  <button id="js-btn-sites" id>
                     Sites <img src="/assets//img/arrow-down-white.svg" alt="" />
                   </button>
                 </li>
@@ -86,9 +139,9 @@
         </div>
       </div>
       <img src="/assets/img/banner.jpg" alt="" />
-    </div>
+    </section>
 
-    <div class="s-products">
+    <section class="s-products">
       <div class="container">
         <div class="services">
           <div class="titles">
@@ -158,11 +211,298 @@
           </div>
         </div>
         <div class="products">
-          <h2>Conheça todos produtos Nerdweb</h2>
-          <div class="slide-products"></div>
+          <h2>Conheça todos <strong>produtos Nerdweb</strong></h2>
+          <div class="slide-products">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/img/LAPTOP-1.jpg" alt="" />
+                <span>Sites</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/SHOP-1.jpg" alt="" />
+                <span>E-commerce</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/PHONE-1.jpg" alt="" />
+                <span>Redes</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/LAPTOP-2.jpg" alt="" />
+                <span>Sites</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/SHOP-2.jpg" alt="" />
+                <span>E-commerce</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/PHONE-2.jpg" alt="" />
+                <span>Redes</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/LAPTOP-3.jpg" alt="" />
+                <span>Sites</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/SHOP-3.jpg" alt="" />
+                <span>E-commerce</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/PHONE-3.jpg" alt="" />
+                <span>Redes</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/LAPTOP-2.jpg" alt="" />
+                <span>Sites</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/SHOP-2.jpg" alt="" />
+                <span>E-commerce</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/PHONE-2.jpg" alt="" />
+                <span>Redes</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/LAPTOP-3.jpg" alt="" />
+                <span>Sites</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/SHOP-3.jpg" alt="" />
+                <span>E-commerce</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/img/PHONE-3.jpg" alt="" />
+                <span>Redes</span>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <a href="#">Ver todos produtos</a>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="s-joinUs">
+      <div class="container">
+        <div class="faca-parte">
+          <div class="text-area">
+            <h2>Faça parte do nosso time de nerds</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+            </p>
+            <a href="">Cadastre-se</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-services">
+      <div class="container">
+        <div class="titles">
+          <h2>Seleção de Serviços</h2>
+          <span> Conheça nossa seleção especial </span>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="img">
+              <img src="/assets/img/Imagem card serviço.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <h4>Serviço de teste de front-end</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a href="#">Conhecer</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/assets/img/Imagem card serviço 2.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <h4>Serviço de teste de front-end</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a href="#">Conhecer</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="/assets/img/Imagem card serviço 3.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <h4>Serviço de teste de front-end</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a href="#">Conhecer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-about">
+      <div class="container">
+        <div class="title-area">
+          <div class="text">
+            <h2>Conheça a visão Nerdweb e entenda nossa história</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
+            </p>
+            <a href="#">Ir para sobre</a>
+          </div>
+        </div>
+        <div class="text-area">
+          <div class="texts">
+            <h4>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+              <strong
+                >At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren,
+              </strong>
+              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet, consetetur
+              <strong
+                >sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam
+              </strong>
+              voluptua. At vero eos et accusam et.
+            </p>
+          </div>
+          <div class="badges">
+            <img src="/assets/img/badge-1-2x.jpg" alt="" />
+            <img src="/assets/img/badge-2-2x.jpg" alt="" />
+            <img src="/assets/img/badge-3-2x.jpg" alt="" />
+          </div>
+        </div>
+        <div class="form">
+          <div class="news">
+            <h2>Novidades e descontos especiais</h2>
+            <p>
+              Descubra com a gente uma vida nova, saudável, cheia de sabor e
+              desconto!
+            </p>
+          </div>
+          <form>
+            <div class="field">
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Nome:"
+              />
+            </div>
+
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="E-mail:"
+              />
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Cadastrar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="upper-area">
+          <h3>nerdweb</h3>
+          <div class="links">
+            <div class="group">
+              <h4>Nerdweb</h4>
+              <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Nossos Princípios</a></li>
+                <li><a href="">Funcionários</a></li>
+                <li><a href="">Trabalhe Conosco</a></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h4>Ajuda</h4>
+              <ul>
+                <li><a href="">Prazos e Entregas</a></li>
+                <li><a href="">Troca e Devoluções</a></li>
+                <li><a href="">Políticas de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="group">
+              <h4>Atendimento</h4>
+              <ul>
+                <li><a href="">Dúvidas Frequentes</a></li>
+                <li><a href="">(41) 3333-3333</a></li>
+                <li><a href="">teste@nerdweb.com.br</a></li>
+              </ul>
+            </div>
+            <div class="business-hours">
+              <h4>Horário de atendimento</h4>
+              <p>
+                De segunda a sexta-feira das 08h00 às 12h00 e das 13h00 às 17h40
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lower-area">
+          <div class="copyright">
+            <span>
+              2022 Nerdweb - Extreme Hosting, todos os direitos reservados.
+            </span>
+          </div>
+          <div class="social">
+            <span> Fique em sintonia com a gente </span>
+            <div class="icons">
+              <a
+                href="https://www.facebook.com/nerdwebsolucoes/"
+                target="_blank"
+                ><img
+                  src="/assets/img/icon-facebook.svg"
+                  alt="ícone do facebook"
+              /></a>
+              <a href="https://www.instagram.com/nerdweb/" target="_blank"
+                ><img
+                  src="/assets/img/icon-instagram.svg"
+                  alt="Ícone do Instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/nerdweb/"
+                target="_blank"
+                ><img
+                  src="/assets/img/icon-linkedin.svg"
+                  alt="Ícone do Linkedin"
+              /></a>
+              <a href="#" target="_blank"
+                ><img src="/assets/img/icon-twitter.svg" alt="Ícone do Twitter"
+              /></a>
+              <a href="#" target="_blank"
+                ><img src="/assets/img/icon-youtube.svg" alt="Ícone do Youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/plugins.js"></script>
     <script src="js/all.js"></script>
