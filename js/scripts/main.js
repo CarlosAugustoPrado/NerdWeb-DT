@@ -65,6 +65,9 @@ var slideCards = new Swiper(".slide-cards", {
     900: {
       slidesPerView: 3,
     },
+    800: {
+      slidesPerView: 2,
+    },
     500: {
       slidesPerView: 1.5,
       spaceBetween: 10,
@@ -81,7 +84,7 @@ var slideCards = new Swiper(".slide-cards", {
 //Menu modal
 const btnAbrirModal = document.getElementById("js-btn-sites");
 const modalMenu = document.getElementById("js-modal-menu");
-const imgBtnAbrirModal = btnAbrirModal.querySelector("img");
+const imgBtnAbrirModal = btnAbrirModal.querySelector("i");
 
 btnAbrirModal.addEventListener("click", () => {
   if (modalMenu.classList.contains("active")) {
@@ -97,6 +100,7 @@ btnAbrirModal.addEventListener("click", () => {
 const menuMobile = document.getElementById("js-menu-mobile");
 const modalMobile = document.getElementById("js-modal-mobile");
 const btnModalMobile = document.getElementById("js-btn-modal-mobile");
+const imgMenuMobile = document.getElementById("js-caret-mobile");
 
 const btnOpenMenuMobile = document.getElementById("js-open-menu-mobile");
 const btnCloseMenuMobile = document.getElementById("js-closeMenuMobile");
@@ -106,7 +110,13 @@ btnCloseMenuMobile.addEventListener("click", () => {
 });
 
 btnModalMobile.addEventListener("click", () => {
-  modalMobile.classList.toggle("active");
+  if (modalMobile.classList.contains("active")) {
+    imgMenuMobile.style.transform = "rotate(0deg)";
+    modalMobile.classList.remove("active");
+  } else {
+    imgMenuMobile.style.transform = "rotate(180deg)";
+    modalMobile.classList.add("active");
+  }
 });
 
 btnOpenMenuMobile.addEventListener("click", () => {

@@ -10814,6 +10814,10 @@ header .container .login .icons button img {
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
+.s-hero .upper-area .container .menu nav ul li button i {
+  display: block;
+  margin-left: 1rem;
+}
 .s-hero .upper-area .container .menu nav ul li button:hover {
   -webkit-box-shadow: inset 130px 0 0 0 #54b3d6;
   box-shadow: inset 130px 0 0 0 #54b3d6;
@@ -10933,6 +10937,9 @@ header .container .login .icons button img {
   }
 }
 @media (max-width: 600px) {
+  .s-hero .upper-area {
+    display: none;
+  }
   .s-hero .upper-area .container .menu form .search-container {
     display: none;
   }
@@ -11065,7 +11072,7 @@ header .container .login .icons button img {
   margin-right: 2rem;
   cursor: pointer;
 }
-.s-products .container .services .slide-services .swiper-navigation .button-prev img {
+.s-products .container .services .slide-services .swiper-navigation .button-prev i {
   width: 1rem;
 }
 .s-products .container .services .slide-services .swiper-navigation .button-next {
@@ -11088,7 +11095,7 @@ header .container .login .icons button img {
   background-color: #f8fcfe;
   cursor: pointer;
 }
-.s-products .container .services .slide-services .swiper-navigation .button-next img {
+.s-products .container .services .slide-services .swiper-navigation .button-next i {
   width: 1rem;
 }
 .s-products .container .services .slide-services .swiper-wrapper .swiper-slide {
@@ -11234,6 +11241,9 @@ header .container .login .icons button img {
   }
   .s-products .container .services .slide-services {
     margin-left: 2rem;
+  }
+  .s-products .container .services .slide-services .swiper-navigation {
+    left: 34.4rem;
   }
   .s-products .container .products .slide-products {
     max-width: 120rem;
@@ -11882,7 +11892,6 @@ header .container .login .icons button img {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  display: none;
 }
 .modal-menu.active {
   opacity: 1;
@@ -12069,9 +12078,13 @@ header .container .login .icons button img {
   font-size: 1.4rem;
   color: #5eb7f2;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.menu-mobile aside .nav-site ul li button img {
+.menu-mobile aside .nav-site ul li button i {
+  display: block;
   width: 2rem;
+  margin-left: 0.5rem;
 }
 .menu-mobile aside .nav-site ul li button .active {
   color: #f8fcfe;
