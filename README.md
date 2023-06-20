@@ -1,5 +1,7 @@
 # Desafio Técnico - NerdWeb
 
+## Link para a aplicação online: https://nerd-web-dt.vercel.app
+
 Projeto de um desafio técnico realizado para a empresa NerdWeb.
 
 ## Pré-requisitos
